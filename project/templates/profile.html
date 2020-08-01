@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title%} Profile Page {% endblock %}
+{% block content %}
+<h1 class="title">
+  Welcome, {{name}}, Click <a href="quiz">HERE</a> to take the quiz...
+</h1>
+{% endblock %}
+
+<a href="{{ url_for('auth.signup') }}" class="navbar-item">
+                                Sign Up
+                            </a>

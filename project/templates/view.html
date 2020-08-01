@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for n in values %}
+        <p>Name: {{n.name}} Email: {{n.email}} Created: {{n.created}}</p>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title%} Python Quiz {% endblock %}
+{% block content %}
+<div>
+    <h2> Welcome to the Quiz</h2>
+    <form action="" method="post">
+        <p> Question 1: ...
+            What is the Keyword needed to define a class in Python</p>
+            <input type="text" name="q1" value="{{
+          request.form.q1 }}">
+
+
+        <p> Question 2:....
+            What is the Keyword needed to define a function in Python</p>
+            <input type="text" name="q2" value="{{
+          request.form.q2 }}">
+
+        <p> Question 3:....
+            What is the built in function used to display information in the terminal</p>
+            <input type="text" name="q3" value="{{
+          request.form.q3 }}">
+
+        <p> Question 4:....
+            What is the symbol used in Python to represent Equals to </p>
+            <input type="text" name="q4" value="{{
+          request.form.q4 }}">
+
+        <div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Submit Your Answers!
+						</button>
+					</div>
+
+    </form>
+</div>
+{% endblock %}
